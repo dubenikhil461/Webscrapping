@@ -1,0 +1,28 @@
+{
+  "name": "webscrapping",
+  "version": "1.0.0",
+  "description": "This project is dedicated to learning and mastering web scraping using modern tools in the Node.js ecosystem. The goal is to understand how data can be programmatically extracted from websites, even when they involve complex HTML structures, cookies, headers, CAPTCHAs, and dynamic content rendered with JavaScript.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubenikhil461/Webscrapping.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dubenikhil461/Webscrapping/issues"
+  },
+  "homepage": "https://github.com/dubenikhil461/Webscrapping#readme",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "qs": "^6.14.0"
+  }
+}
