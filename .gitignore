@@ -20,6 +20,15 @@ pids/
 # Optional eslint cache
 .eslintcache
 
+# Prettier files
+.prettierignore
+.prettierrc
+.prettierrc.js
+.prettierrc.json
+.prettierrc.yml
+.prettierrc.yaml
+.prettierrc.toml
+
 # dotenv environment files
 .env
 .env.local
