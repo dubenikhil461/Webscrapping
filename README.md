@@ -24,18 +24,18 @@ This project will be structured in stages, from static scraping using Cheerio to
 
 ## ðŸ§° Tools & Libraries Used
 
-| Tool / Library          | Description                                                     |
-|--------------------------|-----------------------------------------------------------------|
-| **Axios**                | Promise-based HTTP client to send GET/POST requests             |
-| **Cheerio**              | jQuery-like library to parse and traverse HTML content          |
-| **Puppeteer**            | Headless Chrome for scraping JavaScript-rendered pages          |
-| **Playwright**           | Automation framework for Chromium, Firefox, and WebKit          |
-| **FormData**             | To simulate form submissions and upload POST payloads           |
-| **fs (File System)**     | Node.js module to save scraped data to local files              |
-| **tesseract.js**         | OCR engine to extract text from CAPTCHA images                  |
-| **dotenv**               | To load and manage environment variables                        |
-| **cookie/tough-cookie**  | Cookie jar to persist login and session cookies                 |
-| **Node.js**              | JavaScript runtime environment for running scraping scripts     |
+| Tool / Library          | Description                                                 |
+| ----------------------- | ----------------------------------------------------------- |
+| **Axios**               | Promise-based HTTP client to send GET/POST requests         |
+| **Cheerio**             | jQuery-like library to parse and traverse HTML content      |
+| **Puppeteer**           | Headless Chrome for scraping JavaScript-rendered pages      |
+| **Playwright**          | Automation framework for Chromium, Firefox, and WebKit      |
+| **FormData**            | To simulate form submissions and upload POST payloads       |
+| **fs (File System)**    | Node.js module to save scraped data to local files          |
+| **tesseract.js**        | OCR engine to extract text from CAPTCHA images              |
+| **dotenv**              | To load and manage environment variables                    |
+| **cookie/tough-cookie** | Cookie jar to persist login and session cookies             |
+| **Node.js**             | JavaScript runtime environment for running scraping scripts |
 
 ---
 
@@ -52,13 +52,14 @@ This project will be structured in stages, from static scraping using Cheerio to
 
 This project is for **educational purposes only**. Make sure to check a websiteâ€™s `robots.txt` and **Terms of Service** before scraping it. Always scrape responsibly and avoid putting load on websitesâ€™ servers.
 
+## Timeline of this course
 
-## Timeline of this course 
-## project1 done for pratice  
+## project1 done for pratice
+
 # week1
 
-| Day | Topics                                   |             |Tasks                                                                      |
-| --- | ---------------------------------------- | -------------------------------------------------------------------------- |
+| Day | Topics                                   |                                                                            | Tasks |
+| --- | ---------------------------------------- | -------------------------------------------------------------------------- | ----- |
 | 1   | **What is Web Scraping? Legal + Ethics** | Learn basics of HTML, CSS structure, HTTP. Tools: Postman, DevTools        |
 | 2   | **Request-Response & Axios**             | Setup Node.js + Axios. Try scraping a public site like quotes.toscrape.com |
 | 3   | **Cheerio DOM Parsing**                  | Practice selecting tags, attributes, and text using Cheerio                |
@@ -67,7 +68,8 @@ This project is for **educational purposes only**. Make sure to check a websiteâ
 | 6   | **Form Data + Hidden Fields**            | Parse `ViewState`, `CSRF`, hidden inputs and post them correctly           |
 | 7   | **Practical Project 2**                  | Scrape a job listing site or e-commerce product list with filtering        |
 
-# week2 
+# week2
+
 | Day | Topics                                | Tasks                                                                         |
 | --- | ------------------------------------- | ----------------------------------------------------------------------------- |
 | 8   | **Puppeteer (Headless Browser)**      | Load a site, click buttons, extract dynamic content                           |
@@ -79,6 +81,7 @@ This project is for **educational purposes only**. Make sure to check a websiteâ
 | 14  | **Practical Project 3**               | Scrape an authenticated, paginated portal like TDS TRACES (what you're doing) |
 
 # week3
+
 | Day | Topics                     | Tasks                                                             |
 | --- | -------------------------- | ----------------------------------------------------------------- |
 | 15  | **Intercepting API Calls** | Use DevTools â†’ Network tab to mimic API requests                  |
@@ -87,4 +90,3 @@ This project is for **educational purposes only**. Make sure to check a websiteâ
 | 18  | **Export & Clean Up**      | Handle broken tags, character encoding, malformed HTML            |
 | 19  | **Project 4 (Combo)**      | End-to-end scraper â†’ login + dynamic form + PDF or Excel download |
 | 20  | **Deploying a Scraper**    | Run on VPS (like Railway, Vercel, Render, or barebone server)     |
-

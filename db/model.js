@@ -6,7 +6,7 @@ const quoteSchema = new mongoose.Schema(
     author: { type: String },
     tags: { type: [String], default: [] },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const Quote = mongoose.model("Quote", quoteSchema);

@@ -25,10 +25,14 @@
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
+    "mocha": "^11.7.1",
     "mongod": "^2.0.0",
     "mongoose": "^8.16.1",
     "puppeteer": "^24.11.0",
     "qs": "^6.14.0",
     "tough-cookie": "^5.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
