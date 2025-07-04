@@ -1,4 +1,4 @@
-import puppeteer from "puppeteer";
+import puppeteer, { KnownDevices } from "puppeteer";
 import { setTimeout } from "node:timers/promises"
 import expect from 'expect.js'
 describe("describe", () => {
@@ -37,5 +37,11 @@ describe("describe", () => {
         const url =await page.url()
         await page.goto(url)
         await page.screenshot({ path: 'example.png', fullPage: true })
+    })
+    it.only("Emulate device", async () => {
+        const iPhone = KnownDevices['iPhone 12 Pro']
+        await page.emulate(iPhone)
+        await page.goto("https://quotes.toscrape.com/login")
+        console.log(iPhone)
     })
 })
