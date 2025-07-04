@@ -23,6 +23,7 @@
     "axios-cookiejar-support": "^6.0.2",
     "cheerio": "^1.1.0",
     "dotenv": "^17.0.0",
+    "expect": "^30.0.4",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "mocha": "^11.7.1",
@@ -33,6 +34,7 @@
     "tough-cookie": "^5.1.2"
   },
   "devDependencies": {
+    "expect.js": "^0.3.1",
     "prettier": "^3.6.2"
   }
 }
