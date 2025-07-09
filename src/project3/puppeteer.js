@@ -27,7 +27,7 @@ describe("describe", () => {
         console.log(await page.url())
         expect(await page.title()).to.contain('Example Domain1')
     });
-    it("test2", async () => {
+    it.only("test2", async () => {
         await page.goto("https://quotes.toscrape.com/login")
         await page.waitForSelector("form")
         await page.type("#username", "nikhil", { delay: 100 })
@@ -38,7 +38,7 @@ describe("describe", () => {
         await page.goto(url)
         await page.screenshot({ path: 'example.png', fullPage: true })
     })
-    it.only("Emulate device", async () => {
+    it("Emulate device", async () => {
         const iPhone = KnownDevices['iPhone 12 Pro']
         await page.emulate(iPhone)
         await page.goto("https://quotes.toscrape.com/login")
