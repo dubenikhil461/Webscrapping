@@ -19,7 +19,7 @@ describe("describe", () => {
         await browser.close();
     });
 
-    it.skip("test1", async () => {
+    it("test1", async () => {
         await page.goto("https://example.com/")
         await page.setViewport({ width: 1280, height: 1280 })
         console.log(await page.title())
@@ -27,7 +27,7 @@ describe("describe", () => {
         console.log(await page.url())
         expect(await page.title()).to.contain('Example Domain1')
     });
-    it.only("test2", async () => {
+    it("test2", async () => {
         await page.goto("https://quotes.toscrape.com/login")
         await page.waitForSelector("form")
         await page.type("#username", "nikhil", { delay: 100 })
@@ -44,4 +44,13 @@ describe("describe", () => {
         await page.goto("https://quotes.toscrape.com/login")
         console.log(iPhone)
     })
+    it.only("file upload", async () => {
+        await page.goto("https://qa-automation-practice.netlify.app/file-upload");
+        const fileupload = await page.$("input[type='file']");
+        const filetoupload = 'test1.txt';
+        await fileupload.uploadFile(filetoupload);
+        await page.click("button[type='submit']",{delay :1000});
+        // await setTimeout(3000);
+        await page.waitForSelector("#file_upload_response");
+    });
 })

@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1"
+    "test1": "npx mocha ./src/project3/**.js --timeout=3000"
   },
   "repository": {
     "type": "git",
