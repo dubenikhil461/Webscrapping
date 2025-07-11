@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "This project is dedicated to learning and mastering web scraping using modern tools in the Node.js ecosystem. The goal is to understand how data can be programmatically extracted from websites, even when they involve complex HTML structures, cookies, headers, CAPTCHAs, and dynamic content rendered with JavaScript.",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "test1": "npx mocha ./src/project3/**.js --timeout=3000"
+    "test1": "npx mocha ./src/project3/**.js --timeout=3000",
+    "test-snapshots": "jest --config=./src/project4/jest.config.js --detectOpenHandles --forceExit",
+    "test-snapshots-update": "jest --config=./src/project4/jest.config.js --updateSnapshot --detectOpenHandles --forceExit"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "expect": "^30.0.4",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
+    "jest": "^29.7.0",
+    "jest-image-snapshot": "^6.5.1",
     "mocha": "^11.7.1",
     "mongod": "^2.0.0",
     "mongoose": "^8.16.1",
